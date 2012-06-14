@@ -2,14 +2,13 @@
 %define		pkg	lru-cache
 Summary:	A cache object that deletes the least recently used items
 Name:		nodejs-%{pkg}
-Version:	1.0.4
+Version:	1.1.0
 Release:	1
 License:	MIT
 Group:		Development/Libraries
 URL:		https://github.com/isaacs/node-lru-cache
-# download from https://github.com/isaacs/node-lru-cache/tarball/%%{version}
-Source0:	isaacs-node-%{pkg}-%{version}-0-g%{git_hash}.tar.gz
-# Source0-md5:	44deb216a31c660704f130671025be23
+Source0:	http://registry.npmjs.org/lru-cache/-/lru-cache-%{version}.tgz
+# Source0-md5:	66c08fe7d0fd4490053f04cdfcb4856a
 BuildRequires:	rpmbuild(macros) >= 1.634
 Requires:	nodejs
 BuildArch:	noarch
@@ -20,7 +19,7 @@ A cache object that deletes the least recently used items.
 
 %prep
 %setup -qc
-mv isaacs-node-%{pkg}-*/* .
+mv package/* .
 
 %install
 rm -rf $RPM_BUILD_ROOT
