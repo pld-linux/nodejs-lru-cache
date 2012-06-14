@@ -1,4 +1,3 @@
-%define		git_hash 83b610b
 %define		pkg	lru-cache
 Summary:	A cache object that deletes the least recently used items
 Name:		nodejs-%{pkg}
