@@ -1,13 +1,13 @@
 %define		pkg	lru-cache
 Summary:	A cache object that deletes the least recently used items
 Name:		nodejs-%{pkg}
-Version:	2.2.1
+Version:	2.1.0
 Release:	1
 License:	MIT
 Group:		Development/Libraries
 URL:		https://github.com/isaacs/node-lru-cache
 Source0:	http://registry.npmjs.org/lru-cache/-/lru-cache-%{version}.tgz
-# Source0-md5:	3be59a2b955eb1ad620827a6223c3d0c
+# Source0-md5:	40387e77dc25d0eb7616b0c3733d945c
 BuildRequires:	rpmbuild(macros) >= 1.634
 Requires:	nodejs
 BuildArch:	noarch
