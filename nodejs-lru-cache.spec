@@ -24,7 +24,7 @@ mv package/* .
 rm -rf $RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT%{nodejs_libdir}/%{pkg}
-cp -a lib $RPM_BUILD_ROOT%{nodejs_libdir}/%{pkg}/
+cp -a package.json lib $RPM_BUILD_ROOT%{nodejs_libdir}/%{pkg}/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
