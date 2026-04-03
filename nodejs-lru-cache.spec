@@ -2,7 +2,7 @@
 Summary:	A cache object that deletes the least recently used items
 Name:		nodejs-%{pkg}
 Version:	2.5.0
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Libraries
 URL:		https://github.com/isaacs/node-lru-cache
